@@ -6,9 +6,11 @@ const Layout = ({children}) => {
   return (
     <div className="container">
       <header className={ styles.header }>
-        <h1 className={ styles.title }>
-          Bruno Annunciato
-        </h1>
+        <Link href="/">
+          <h1 className={ styles.title }>
+            Bruno Annunciato
+          </h1>
+        </Link>
 
         <nav>
           <ul className={ styles.navList }>
