@@ -60,17 +60,3 @@ export default function Home({imageUrl}) {
     </Layout>
   )
 }
-
-export const getStaticProps = async () => {
-  console.log('AAAA')
-  const gitData = await fetch('https://api.github.com/users/brunoannunciato') 
-  const response = await gitData.json()
-
-  console.log(response)
-
-  return {
-    props: {
-      imageUrl: response.avatar_url
-    }
-  }
-}
