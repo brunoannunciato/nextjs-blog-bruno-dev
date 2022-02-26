@@ -11,7 +11,7 @@ export default function Home({imageUrl}) {
     <Layout>
       <section className={ styles.welcomeSection }>
           <h2 className={ styles.subtitle }>
-            Prazer!
+            Prazer 👋🏼
           </h2>
 
         <div className={ styles.welcomeContent }>
@@ -40,7 +40,7 @@ export default function Home({imageUrl}) {
 
       <section className={ styles.section }>
         <h2 className={ styles.subtitle }>
-          Últimos posts
+          Últimos posts ✏️
         </h2>
 
         <div className='section-content'>
