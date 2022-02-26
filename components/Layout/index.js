@@ -1,5 +1,7 @@
 import Link from "next/link"
 
+import Footer from "../Footer"
+
 import styles from './layout.module.scss'
 
 const Layout = ({children}) => {
@@ -32,6 +34,8 @@ const Layout = ({children}) => {
       <main className="main">
         { children }
       </main>
+
+      <Footer/>
     </div>
   )
 }
