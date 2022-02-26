@@ -1,0 +1,33 @@
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.subtitle {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.welcomeContent {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 200px;
+  margin-bottom: 3rem;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  align-self: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+}

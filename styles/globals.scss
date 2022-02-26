@@ -16,12 +16,42 @@ body {
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary: #1246e2;
+  --color-secondary: #383838;
+}
+
 .container {
   max-width: 56rem;
   margin: 0 auto;
 }
 
-:root {
-  --color-primary: #1246e2;
-  --color-secondary: #383838;
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    width: 0%;
+    transition: width 0.3s ease-out;
+  }
+
+  &:hover {
+    &::after {
+      width: 90%;
+    }
+  }
+}
+
+p {
+  font-family: "helvetica", "arial", sans-serif;
+  line-height: 150%;
+  font-size: 1.125rem;
 }
