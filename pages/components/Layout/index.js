@@ -1,24 +1,26 @@
 import Link from "next/link"
 
+import styles from './layout.module.scss'
+
 const Layout = ({children}) => {
   return (
     <div className="container">
-      <header className="header">
-        <h1 className="header__title">
+      <header className={ styles.header }>
+        <h1 className={ styles.title }>
           Bruno Annunciato
         </h1>
 
-        <nav className="header__nav">
-          <ul className="header__nav-list">
-            <li className="header__nav-item">
+        <nav>
+          <ul className={ styles.navList }>
+            <li>
               <Link href="/">
-                <a>Blog</a>
+                <a className={ styles.link }>Blog</a>
               </Link>
             </li>
 
-            <li className="header__nav-item">
+            <li>
               <Link href="/">
-                <a>Sobre mim</a>
+                <a className={ styles.link }>Sobre mim</a>
               </Link>
             </li>
           </ul>

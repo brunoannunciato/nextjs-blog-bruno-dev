@@ -5,6 +5,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  color: var(--color-secondary);
   font-family: "Shippori Antique B1", -apple-system, BlinkMacSystemFont,
     sans-serif;
   width: 100vw;
@@ -18,4 +19,9 @@ body {
 .container {
   max-width: 56rem;
   margin: 0 auto;
+}
+
+:root {
+  --color-primary: #1246e2;
+  --color-secondary: #383838;
 }

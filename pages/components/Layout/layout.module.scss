@@ -1,0 +1,36 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navList {
+  display: flex;
+  justify-content: flex-end;
+  gap: 28px;
+  list-style: none;
+}
+
+.link {
+  color: var(--color-primary);
+  text-decoration: none;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    width: 0%;
+    transition: width 0.3s ease-out;
+  }
+
+  &:hover {
+    &::after {
+      width: 90%;
+    }
+  }
+}
