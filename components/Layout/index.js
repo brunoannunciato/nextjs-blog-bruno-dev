@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Head from "next/head"
 
 import Footer from "../Footer"
 
@@ -7,6 +8,12 @@ import styles from './layout.module.scss'
 const Layout = ({children}) => {
   return (
     <div className="container">
+      <Head>
+        <title>
+          Bruno Annunciato 🧑🏻‍💻
+        </title>
+      </Head>
+
       <header className={ styles.header }>
         <Link href="/">
           <h1 className={ styles.title }>
@@ -17,13 +24,13 @@ const Layout = ({children}) => {
         <nav>
           <ul className={ styles.navList }>
             <li>
-              <Link href="/">
+              <Link href="/blog">
                 <a className={ styles.link }>Blog</a>
               </Link>
             </li>
 
             <li>
-              <Link href="/">
+              <Link href="/sobre-mim">
                 <a className={ styles.link }>Sobre mim</a>
               </Link>
             </li>

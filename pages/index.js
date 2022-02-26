@@ -16,8 +16,7 @@ export default function Home({imageUrl}) {
 
         <div className={ styles.welcomeContent }>
           <p className="text">
-            Olá! Sou <strong>Bruno Annunciato</strong>, desenvolvedor front-end desde 2016 e bacharel em Design Digital pela UAM em 2019. Atualmente atuo no time da Red Ventures Brasil. <br/><br/>
-            
+            Sou <strong>Bruno Annunciato</strong>, desenvolvedor front-end desde 2016 e bacharel em Design Digital pela UAM em 2019. Atualmente atuo no time da Red Ventures Brasil. <br/><br/>
             <Link href="/sobre-mim">
               <a>
                 Saiba mais sobre mim
