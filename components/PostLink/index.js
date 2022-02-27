@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import styles from './post-link.module.scss'
 
-const PostLink = ({url, title, date, category}) => {
+const PostLink = ({url, title, date, category, key}) => {
   return (
-    <div className={ styles.postLink }>
+    <div className={ styles.postLink } key={ key }>
         <h3 className={ styles.title }>
           <Link href={url}>
             <a>

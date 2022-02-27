@@ -48,6 +48,7 @@ export default function Home({lastPosts}) {
           {
             lastPosts.map(post => {
               return <PostLink
+                key={ post.id }
                 title={ post.title }
                 date={ post.date }
                 url={ post.id }
