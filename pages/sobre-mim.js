@@ -60,7 +60,7 @@ const sobreMim = () => {
 
             <Link href="https://github.com/brunoannunciato" target="_blank">
             <a>
-              Githib
+              Github
             </a>
             </Link> <br />
           </p>
