@@ -55,6 +55,12 @@ export default function Home({lastPosts}) {
               />
             })
           }
+
+          <Link href="/blog">
+            <a>
+              Ver outros
+            </a>
+          </Link>
         </div>
       </section>
     </Layout>
