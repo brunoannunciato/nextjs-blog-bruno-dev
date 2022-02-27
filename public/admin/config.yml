@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: brunoannunciato/nextjs-blog-bruno-dev
-  base_url: https://bruno.dev/
+  base_url: https://nextjs-blog-bruno-dev.vercel.app/
   auth_endpoint: api/auth/ # Essa rota vai ser muito importante mais para frente
 
 media_folder: public/assets/img
