@@ -7,7 +7,7 @@ import PostLink from '../components/PostLink'
 import styles from './styles/home.module.scss'
 import { getSortedPostsData } from '../lib/posts'
 
-export default function Home({allPostsData}) {
+export default function Home({lastPosts}) {
 
   return (
     <Layout>
@@ -46,7 +46,7 @@ export default function Home({allPostsData}) {
 
         <div className='section-content'>
           {
-            allPostsData.map(post => {
+            lastPosts.map(post => {
               return <PostLink
                 title={ post.title }
                 date={ post.date }
@@ -64,9 +64,13 @@ export default function Home({allPostsData}) {
 export const getStaticProps = () => {
  const allPostsData = getSortedPostsData()
 
+ const lastPosts = allPostsData.filter((_, index) => {
+    return index < 3
+  })
+
   return {
     props: {
-      allPostsData
+      lastPosts
     }
   }
 }
