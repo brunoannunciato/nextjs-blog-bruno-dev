@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from './post-link.module.scss'
 
-const PostLink = ({url, title, date}) => {
+const PostLink = ({url, title, date, category}) => {
   return (
     <div className={ styles.postLink }>
         <h3 className={ styles.title }>
@@ -12,9 +12,15 @@ const PostLink = ({url, title, date}) => {
           </Link>
         </h3>
 
-        <span className={ styles.date }>
-          { date }
-        </span>
+        <div className={ styles.info }>
+          <span className={ styles.category }>
+            { category }
+          </span>
+
+          <span className={ styles.date }>
+            publicado em: { date }
+          </span>
+        </div>
     </div>
   )
 }

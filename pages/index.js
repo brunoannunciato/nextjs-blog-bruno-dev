@@ -5,8 +5,10 @@ import Layout from '../components/Layout'
 import PostLink from '../components/PostLink'
 
 import styles from './styles/home.module.scss'
+import { getSortedPostsData } from '../lib/posts'
 
-export default function Home({imageUrl}) {
+export default function Home({allPostsData}) {
+
   return (
     <Layout>
       <section className={ styles.welcomeSection }>
@@ -43,19 +45,28 @@ export default function Home({imageUrl}) {
         </h2>
 
         <div className='section-content'>
-          <PostLink
-            title="Lorem Ipsum Dollar set"
-            date="04/04/1998"
-            url="#"
-          />
-
-          <PostLink
-            title="Lorem Ipsum Dollar set"
-            date="04/04/1998"
-            url="#"
-          />
+          {
+            allPostsData.map(post => {
+              return <PostLink
+                title={ post.title }
+                date={ post.date }
+                url={ post.id }
+                category={ post.category }
+              />
+            })
+          }
         </div>
       </section>
     </Layout>
   )
+}
+
+export const getStaticProps = () => {
+ const allPostsData = getSortedPostsData()
+
+  return {
+    props: {
+      allPostsData
+    }
+  }
 }
