@@ -7,6 +7,10 @@
 
 .title {
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    font-size: 1.125rem;
+  }
 }
 
 .navList {
@@ -20,6 +24,7 @@
   color: var(--color-primary);
   text-decoration: none;
   position: relative;
+  white-space: nowrap;
 
   &:after {
     content: "";

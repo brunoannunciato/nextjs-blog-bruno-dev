@@ -2,9 +2,14 @@
   display: block;
   margin-bottom: 36px;
   max-width: 440px;
+
+  @media (max-width: 768px) {
+    max-width: initial;
+  }
 }
 
 .info {
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
@@ -18,9 +23,8 @@
 .category {
   border: 1px solid var(--color-secondary);
   font-size: 0.875rem;
-  padding: 0 2px;
+  padding: 2px;
   border-radius: 4px;
-  margin-right: 64px;
 }
 
 .date {

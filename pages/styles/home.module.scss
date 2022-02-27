@@ -16,6 +16,11 @@
   position: relative;
   padding-right: 200px;
   margin-bottom: 3rem;
+
+  @media (max-width: 786px) {
+    padding-right: 0;
+    padding-bottom: 200px;
+  }
 }
 
 .imageWrapper {
@@ -30,4 +35,10 @@
   border-radius: 100%;
   position: absolute;
   right: 0;
+
+  @media (max-width: 768px) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
