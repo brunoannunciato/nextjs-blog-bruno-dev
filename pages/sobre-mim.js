@@ -13,7 +13,7 @@ const sobreMim = () => {
           </h2>
 
           <p className="text">
-            Iniciei minha carreira em desenvolvimento em 2016 aos 18 anos, hoje aos 24 procuro me aperfeiçoar não só como desenvolvedor front-end mas também como desenvolvedor de produtos digitais, entendendo e aplicando todas as regras de negócio e encontrando o meio-termo entre as necessidades do produto e a complexidade dos códigos.
+            Iniciei minha carreira como desenvolvedor em 2016 aos 18 anos, hoje aos 24 procuro me aperfeiçoar não só como desenvolvedor front-end mas também como desenvolvedor de produtos digitais, entendendo e aplicando todas as regras de negócio e encontrando o meio-termo entre as necessidades do produto e a complexidade dos códigos.
           </p>
 
           <p className="text">
@@ -31,11 +31,11 @@ const sobreMim = () => {
           </p>
 
           <p className="text">
-            <strong>Banco Pan</strong> - Por indicação de alguns antigos colegas da Jüssi, ingressei como desenvolvedor front-end na equipe de CRM do Pan em 2019. A princípio ficaria responsável pela criação de landing pages promocionais, mas logo que cheguei, aceitei o desafio de fazer uma grande integração entre uma API de serviço de disparo de mensagens via WhatsApp e a Salesforce usando node. Ao finalizar essa tarefa, fui transferido para a equipe de marketing, e fiquei responsável, junto de minha equipe em dar manutenção para o site institucional do banco.
+            <strong>Banco Pan</strong> - Por indicação de alguns antigos colegas da Jüssi, ingressei como desenvolvedor front-end na equipe de CRM do Pan em 2019. A princípio ficaria responsável pela criação de landing pages promocionais, mas logo que cheguei, aceitei o desafio de fazer uma grande integração entre uma API de serviço de disparo de mensagens via WhatsApp e a Salesforce usando node. Ao finalizar essa tarefa, fui transferido para a equipe de marketing, e fiquei responsável, com minha equipe, em dar manutenção para o site institucional do banco.
           </p>
 
           <p className="text">
-            <strong>Red Ventures Brasil</strong> - Empresa que conheci em 2017 quando um dos colaboradores palestrou em minha faculdade. Desde então conheci alguns grandes desenvolvedores que também trabalharam nela fazendo com que cada vez mais eu sentisse vontade de fazer parte. Até que em 2021 um colega de faculdade me indicou para o processo seletivo, fazendo com que eu começasse a trabalhar em julho na empresa melhor estruturada, empática e desafiadora que poderia imaginar trabalhar um dia. Onde continuo trabalhando até hoje.
+            <strong>Red Ventures Brasil</strong> - Empresa que conheci em 2017 quando um dos colaboradores palestrou em minha faculdade. Desde então conheci alguns grandes desenvolvedores que também trabalharam nela, fazendo com que cada vez mais eu sentisse vontade de fazer parte. Até que em 2021 um colega de faculdade me indicou para o processo seletivo, fazendo com que eu começasse a trabalhar em julho na empresa melhor estruturada, empática e desafiadora que poderia imaginar trabalhar um dia. Onde continuo trabalhando até hoje.
           </p>
 
         </section>
