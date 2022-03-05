@@ -13,7 +13,7 @@ const Post = ({postData}) => {
       <meta property="og:site_name" content="Bruno Annunciato" />
       <meta property="og:title" content={ postData.title } />
       <meta property="og:description" content={ postData.description ?? 'Veja esta postagem do blog bruno.dev' }/>
-      <meta property="og:image" itemprop="image" content="/assets/img/cover-image.jpeg" />
+      <meta property="og:image" itemProp="image" content="/assets/img/cover-image.jpeg" />
       <meta property="og:type" content="website" />
       <meta property="og:updated_time" content={postData.date} />
 
