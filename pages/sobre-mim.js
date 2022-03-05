@@ -1,11 +1,22 @@
+import Head from "next/head"
+
 import Link from "next/link"
 import Layout from "../components/Layout"
+import SocialMetaTags from "../components/SocialMetaTags"
 
 import styles from './styles/about.module.scss'
 
 const sobreMim = () => {
   return (
     <Layout>
+      <Head>
+        <SocialMetaTags 
+          title="Bruno Annunciato"
+          description="Saiba mais sobre mim e minha carreira."
+          coverImage="/assets/img/cover-image.jpeg"
+        />
+      </Head>
+
       <div className="content">
         <section className={ styles.section }>
           <h2 className="subtitle">

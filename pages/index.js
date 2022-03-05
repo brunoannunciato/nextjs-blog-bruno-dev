@@ -3,14 +3,23 @@ import Image from 'next/image'
 
 import Layout from '../components/Layout'
 import PostLink from '../components/PostLink'
+import SocialMetaTags from '../components/SocialMetaTags'
 
 import styles from './styles/home.module.scss'
 import { getSortedPostsData } from '../lib/posts'
+import Head from 'next/head'
 
 export default function Home({lastPosts}) {
 
   return (
     <Layout>
+      <Head>
+        <SocialMetaTags 
+          title="Bruno Annunciato"
+          description="Desenvolvedor front-end desde 2016 e bacharel em Design Digital pela UAM em 2019."
+          coverImage="/assets/img/cover-image.jpeg"
+        />
+      </Head>
       <section className={ styles.welcomeSection }>
           <h2 className={ styles.subtitle }>
             Prazer 👋🏼
