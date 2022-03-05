@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Head from "next/head"
 
 import Footer from "../Footer"
 
@@ -8,11 +7,6 @@ import styles from './layout.module.scss'
 const Layout = ({children}) => {
   return (
     <div className="container">
-      <Head>
-        <title>
-          Bruno Annunciato 🧑🏻‍💻
-        </title>
-      </Head>
 
       <header className={ styles.header }>
         <Link href="/">

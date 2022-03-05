@@ -11,7 +11,7 @@ const sobreMim = () => {
     <Layout>
       <Head>
         <SocialMetaTags 
-          title="Bruno Annunciato"
+          title="Bruno Annunciato 🧑🏻‍💻"
           description="Saiba mais sobre mim e minha carreira."
           coverImage="/assets/img/cover-image.jpeg"
         />

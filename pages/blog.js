@@ -13,7 +13,7 @@ const blog = ({allPostsData}) => {
     <Layout>
       <Head>
         <SocialMetaTags 
-          title="Bruno Annunciato"
+          title="Bruno Annunciato 🧑🏻‍💻"
           description="Veja todas as postagens feitas por Bruno Annunciato"
           coverImage="/assets/img/cover-image.jpeg"
         />

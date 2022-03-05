@@ -15,7 +15,7 @@ export default function Home({lastPosts}) {
     <Layout>
       <Head>
         <SocialMetaTags 
-          title="Bruno Annunciato"
+          title="Bruno Annunciato 🧑🏻‍💻"
           description="Desenvolvedor front-end desde 2016 e bacharel em Design Digital pela UAM em 2019."
           coverImage="/assets/img/cover-image.jpeg"
         />
