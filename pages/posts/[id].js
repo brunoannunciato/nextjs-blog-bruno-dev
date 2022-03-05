@@ -18,6 +18,15 @@ const Post = ({postData}) => {
 
           <div className={styles.content} dangerouslySetInnerHTML={{__html: postData.contentHtml}} /> 
         
+          <div className={styles.comments}>
+          <script src="https://utteranc.es/client.js"
+                  repo="brunoannunciato/nextjs-blog-bruno-dev"
+                  issue-term="url"
+                  theme="github-light"
+                  crossorigin="anonymous"
+                  async>
+          </script>
+          </div>
         </div>
 
       </section>
