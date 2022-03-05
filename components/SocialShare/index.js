@@ -27,8 +27,8 @@ const SocialShare = () => {
 
       <div className={styles.icons}>
         {
-          urls.map(url => {
-            return <SocialIcon  target="_blank" url={ url } style={{ height: 25, width: 25 }}/>
+          urls.map((url, index) => {
+            return <SocialIcon key={`icon-${index}`} target="_blank" url={ url } style={{ height: 25, width: 25 }}/>
           })
         }
       </div>
