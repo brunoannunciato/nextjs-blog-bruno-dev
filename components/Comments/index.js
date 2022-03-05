@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react'
+import SocialShare from '../SocialShare'
 
 const Comments = ({ title }) => {
   const parentRef = useRef(null)
@@ -27,6 +28,7 @@ const Comments = ({ title }) => {
   return (
     <div>
       <p className="title" dangerouslySetInnerHTML={{__html: title}}/>
+      <SocialShare />
       <div ref={ parentRef }></div>
     </div>
   )

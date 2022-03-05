@@ -1,0 +1,16 @@
+.social {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  p {
+    margin-right: 12px;
+    font-size: 0.875rem;
+  }
+}
+
+.icons {
+  display: flex;
+  gap: 4px;
+}

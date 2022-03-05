@@ -2175,7 +2175,7 @@ prismjs@^1.23.0:
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.27.0.tgz#bb6ee3138a0b438a3653dd4d6ce0cc6510a45057"
   integrity sha512-t13BGPUlFDR7wRB5kQDG4jjl7XeuH6jbJGt11JHPL96qwsEHNX2+68tFXqc1/k+/jALsbSWJKUOT/hcYAZ5LkA==
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -2217,6 +2217,13 @@ react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-social-icons@^5.11.0:
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/react-social-icons/-/react-social-icons-5.11.0.tgz#98d1e76023a6422439f7ca2d6316f50cec4fec7b"
+  integrity sha512-hlgNMnWgkdRZZFPm8wjsRGQsSYdPC+uqxiJVpUF8Tc83OGiSQ7qtYN+rFwWubYGJ+JfwgpAg9ypx5duJfLZIfg==
+  dependencies:
+    prop-types "^15.7.2"
 
 react@17.0.2:
   version "17.0.2"
