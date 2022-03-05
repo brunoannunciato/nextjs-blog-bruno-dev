@@ -21,12 +21,17 @@ body {
   --color-secondary: #383838;
 }
 
+.utterances {
+  max-width: 56rem;
+  padding: 0 8px 22px;
+}
+
 .container {
   max-width: 56rem;
   margin: 0 auto;
   position: relative;
   min-height: 100vh;
-  padding: 0 8px 22px;
+  padding: 0 8px 64px;
 
   @media (max-width: 768px) {
     max-width: 90%;
