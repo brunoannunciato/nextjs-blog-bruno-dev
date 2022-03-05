@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react'
 
-const Comments = () => {
+const Comments = ({ title }) => {
   const parentRef = useRef(null)
 
   useEffect(() => {
@@ -26,6 +26,7 @@ const Comments = () => {
 
   return (
     <div>
+      <p className="title" dangerouslySetInnerHTML={{__html: title}}/>
       <div ref={ parentRef }></div>
     </div>
   )
