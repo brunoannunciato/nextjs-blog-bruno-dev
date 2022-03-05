@@ -6,8 +6,6 @@ import styles from  './posts.module.scss'
 const Post = ({postData}) => {
   return (
     <Layout>
-      {console.log(postData)}
-
       <section className={ styles.section }>
         <div className={ styles.header }>
           <h1 className={ styles.title }>
