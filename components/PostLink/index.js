@@ -5,7 +5,7 @@ const PostLink = ({url, title, date, category, key}) => {
   return (
     <div className={ styles.postLink } key={ key }>
         <h3 className={ styles.title }>
-          <Link href={url}>
+          <Link href={`/posts/${url}`}>
             <a>
               { title }
             </a>
