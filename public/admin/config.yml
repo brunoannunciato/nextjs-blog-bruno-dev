@@ -3,12 +3,12 @@ backend:
   repo: brunoannunciato/nextjs-blog-bruno-dev
   branch: main
   base_url: https://nextjs-blog-bruno-dev.vercel.app/
-  auth_endpoint: api/auth # Essa rota vai ser muito importante mais para frente
+  auth_endpoint: api/auth
 
 media_folder: public/assets/img
 public_folder: /assets/img
 
-publish_mode: editorial_workflow # Isso permite ter aquele workflow com drafts e tudo
+publish_mode: editorial_workflow
 
 slug:
   encoding: "ascii"
@@ -17,10 +17,10 @@ slug:
 collections:
   - name: posts
     label: posts
-    folder: posts # A pasta onde ficarão os posts
-    create: true # Permite criar um post novo
-    slug: "{{slug}}" # Estrutura do nome arquivo, exemplo: title.md
-    fields: # Os campos do seu frontmatter
+    folder: posts
+    create: true
+    slug: "{{slug}}"
+    fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - {
           label: "Date",
@@ -29,6 +29,7 @@ collections:
           format: "YYYY-MM-DD hh:mm:ss",
         }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
       - { label: "Category", name: "category", widget: "string" }
 
       - { label: "Body", name: "body", widget: "markdown" }
