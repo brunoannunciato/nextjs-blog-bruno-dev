@@ -4,19 +4,18 @@ import Head from 'next/head'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import styles from  './posts.module.scss'
 import Comments from '../../components/Comments'
+import SocialMetaTags from '../../components/SocialMetaTags'
 
 const Post = ({postData}) => {
   return (
     <Layout>
       <Head>
-
-      <meta property="og:site_name" content="Bruno Annunciato" />
-      <meta property="og:title" content={ postData.title } />
-      <meta property="og:description" content={ postData.description ?? 'Veja esta postagem do blog bruno.dev' }/>
-      <meta property="og:image" itemProp="image" content="/assets/img/cover-image.jpeg" />
-      <meta property="og:type" content="website" />
-      <meta property="og:updated_time" content={postData.date} />
-
+        <SocialMetaTags
+          title={ postData.title }
+          description={ postData.description ?? 'Veja esta postagem do blog bruno.dev' }
+          date={ postData.date }
+          coverImage="/assets/img/cover-image.jpeg"
+        />
       </Head>
 
       <section className={ styles.section }>
