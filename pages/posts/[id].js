@@ -1,5 +1,5 @@
 import Layout from '../../components/Layout'
-import Script from 'next/script'
+import Head from 'next/head'
 
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import styles from  './posts.module.scss'
@@ -8,6 +8,17 @@ import Comments from '../../components/Comments'
 const Post = ({postData}) => {
   return (
     <Layout>
+      <Head>
+
+      <meta property="og:site_name" content="Bruno Annunciato" />
+      <meta property="og:title" content={ postData.title } />
+      <meta property="og:description" content={ postData.description ?? 'Veja esta postagem do blog bruno.dev' }/>
+      <meta property="og:image" itemprop="image" content="/assets/img/cover-image.jpeg" />
+      <meta property="og:type" content="website" />
+      <meta property="og:updated_time" content={postData.date} />
+
+      </Head>
+
       <section className={ styles.section }>
         <div className={ styles.header }>
           <h1 className={ styles.title }>
