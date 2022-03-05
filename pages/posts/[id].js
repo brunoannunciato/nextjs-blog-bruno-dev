@@ -21,7 +21,7 @@ const Post = ({postData}) => {
           <div className={styles.comments}>
             <script src="https://utteranc.es/client.js"
                     repo="brunoannunciato/nextjs-blog-bruno-dev"
-                    issue-term="url"
+                    issue-term="pathname"
                     theme="github-light"
                     crossOrigin="anonymous"
                     async>
