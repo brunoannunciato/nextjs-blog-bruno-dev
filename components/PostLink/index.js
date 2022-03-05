@@ -18,7 +18,7 @@ const PostLink = ({url, title, date, category, key}) => {
           </span>
 
           <span className={ styles.date }>
-            publicado em: { date }
+            <span className='hide-sm'>publicado em: </span> { date }
           </span>
         </div>
     </div>
