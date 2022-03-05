@@ -2,6 +2,7 @@
 layout: post
 date: 2022-03-04 12:33:24
 title: Post-completo
+description: Essa postagem vai te deixar completamente abubléblé das ideias!! HIHIHIHIHII
 category: blog
 ---
 
