@@ -8,7 +8,7 @@ const SocialMetaTags = ({
 }) => {
   return <>
     <meta property="og:site_name" content="Bruno Annunciato" />
-    <If condition={title} renderIf={<title>{ postData.title }</title>} />
+    <If condition={title} renderIf={<title>{ title }</title>} />
     <If condition={description} renderIf={<meta name="description" content={ description }/>} />
     <If condition={title} renderIf={ <meta property="og:title" content={ title } /> } />
     <If condition={title} renderIf={ <meta name="twitter:title" content={ title }/> } />
