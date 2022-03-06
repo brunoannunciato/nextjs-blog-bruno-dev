@@ -44,3 +44,5 @@ export default function App() {
   )
 }
 ```
+
+Para ver um exemplo simples com o código aplicado, fiz esse [Code sandBox](https://codesandbox.io/s/custom-tag-name-react-component-5g9041).
