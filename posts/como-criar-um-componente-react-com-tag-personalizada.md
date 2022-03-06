@@ -9,10 +9,38 @@ Dia desses estava eu desenvolvendo o componente de botão do design system da em
 
 ```jsx
 const Button = ({ isButton, children, ...props }) => {
-  return (
-    isButton ? <button {...props}> { children } </button> : <a {...props}> { children } </a>
+  return isButton ? (
+    <button {...props}> {children} </button>
+  ) : (
+    <a {...props}> {children} </a>
   )
 }
 
 export default Button
+```
+
+Porém, dessa forma, criei um outro problema: qualquer mudança que eu quisesse fazer na tag `button` teria que fazer na tag `a`, e o contrário também. Adicionar atributos e classes seria um trabalho repetitivo e eventualmente alguém poderia fazer uma alteração em um e não fazer no outro, então comecei a pesquisar possíveis soluções, até que cheguei [nesta página do stackoverflow](https://stackoverflow.com/questions/33471880/dynamic-tag-name-in-react-jsx) e descobri que é possível criar componentes onde a tag de nível mais alto é variável e pode ser passada por props, apenas criando uma variável que comece com letra maiúscula, como a `CustomTag` no exemplo abaixo:
+
+```jsx
+const Button = ({ tagName = "button", children, ...props }) => {
+  const CustomTag = tagName
+
+  return <CustomTag {...props}> {children} </CustomTag>
+};
+
+export default Button;
+```
+
+Isso é possível pelo fato do JSX interpretar palavra que comece com letra maiúscula dentro dos sinais de menor e maior como um componente React. Dessa forma, ao chamar o componente em outro arquivo, só é preciso passar a prop tagName com o nome da tag desejada, exemplo:
+
+```jsx
+import Button from './Button'
+
+export default function App() {
+  return (
+    <div className="App">
+      <Button tagName="a" href="https://bruno.dev">Ir para o site</Button>
+    </div>
+  )
+}
 ```
