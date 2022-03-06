@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
     <Component {...pageProps} />
 
     <Script strategy='lazyOnload' async src="https://www.googletagmanager.com/gtag/js?id=UA-120224377-2"/>
-    <Script id="dataLayer" strategy='lazyOnload'>
+    <Script id="ga-script" strategy='lazyOnload'>
       {`
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments)}
