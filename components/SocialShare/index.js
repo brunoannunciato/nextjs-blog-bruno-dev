@@ -11,11 +11,11 @@ const SocialShare = () => {
     const message = (params) => encodeURIComponent(`Veja este post ${currentUrl}${params}`)
 
     setUrl([
-      `https://twitter.com/intent/tweet?text=${message('&utm_source=twitter&utm_medium=share-bar')}`,
-      `https://api.whatsapp.com/send?text=${message('&utm_source=whatsapp&utm_medium=share-bar')}`,
-      `https://www.facebook.com/sharer.php?u=${encodeURIComponent(currentUrl + '&utm_source=facebook&utm_medium=share-bar')}`,
-      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl + '&utm_source=linkedin&utm_medium=share-bar')}`,
-      `https://telegram.me/share/url?url=${encodeURIComponent(currentUrl + '&utm_source=telegram&utm_medium=share-bar')}`
+      `https://twitter.com/intent/tweet?text=${message('?utm_source=twitter&utm_medium=share-bar')}`,
+      `https://api.whatsapp.com/send?text=${message('?utm_source=whatsapp&utm_medium=share-bar')}`,
+      `https://www.facebook.com/sharer.php?u=${encodeURIComponent(currentUrl + '?utm_source=facebook&utm_medium=share-bar')}`,
+      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl + '?utm_source=linkedin&utm_medium=share-bar')}`,
+      `https://telegram.me/share/url?url=${encodeURIComponent(currentUrl + '?utm_source=telegram&utm_medium=share-bar')}`
     ])
   }, [])
 
