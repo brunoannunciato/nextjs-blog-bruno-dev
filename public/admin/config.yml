@@ -2,7 +2,7 @@ backend:
   name: github
   repo: brunoannunciato/nextjs-blog-bruno-dev
   branch: main
-  base_url: https://nextjs-blog-bruno-dev.vercel.app/
+  base_url: https://blog.bruno.dev/
   auth_endpoint: api/auth
 
 media_folder: public/assets/img
