@@ -14,11 +14,14 @@ export default function Home({lastPosts}) {
   return (
     <Layout>
       <Head>
+        <title>Bruno Annunciato 🧑🏻‍💻</title>
         <SocialMetaTags 
-          title="Bruno Annunciato 🧑🏻‍💻"
+          title="Bruno Annunciato"
           description="Desenvolvedor front-end desde 2016 e bacharel em Design Digital pela UAM em 2019."
           coverImage="/assets/img/cover-image.jpeg"
         />
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon"></link>
       </Head>
       <section className={ styles.welcomeSection }>
           <h2 className={ styles.subtitle }>
