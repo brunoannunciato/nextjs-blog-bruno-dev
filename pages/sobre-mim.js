@@ -24,7 +24,7 @@ const sobreMim = () => {
           </h2>
 
           <p className="text">
-            Iniciei minha carreira como desenvolvedor em 2016 aos 18 anos, hoje aos 24 procuro me aperfeiçoar não só como desenvolvedor front-end mas também como desenvolvedor de produtos digitais, entendendo e aplicando todas as regras de negócio e encontrando o meio-termo entre as necessidades do produto e a complexidade dos códigos.
+            Iniciei minha carreira como desenvolvedor em 2016 aos 18 anos, hoje aos 25 procuro me aperfeiçoar não só como desenvolvedor front-end mas também como desenvolvedor de produtos digitais, entendendo e aplicando todas as regras de negócio e encontrando o meio-termo entre as necessidades do produto e a complexidade dos códigos.
           </p>
 
           <p className="text">
