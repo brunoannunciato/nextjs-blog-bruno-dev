@@ -30,7 +30,7 @@ export default function Home({lastPosts}) {
 
         <div className={ styles.welcomeContent }>
           <p className="text">
-            Sou <strong>Bruno Annunciato</strong>, desenvolvedor front-end desde 2016 e bacharel em Design Digital pela UAM em 2019. Atualmente atuo no time da Red Ventures Brasil. <br/><br/>
+            Sou <strong>Bruno Annunciato</strong>, desenvolvedor web desde 2016 e bacharel em Design Digital pela UAM em 2019. Atualmente atuo no time do banco Itaú. <br/><br/>
             <Link href="/sobre-mim">
               <a>
                 Saiba mais sobre mim
