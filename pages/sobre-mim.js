@@ -11,10 +11,13 @@ const sobreMim = () => {
     <Layout>
       <Head>
         <SocialMetaTags 
-          title="Bruno Annunciato 🧑🏻‍💻"
+          title="Bruno Annunciato - Sobre mim"
           description="Saiba mais sobre mim e minha carreira."
           coverImage="/assets/img/cover-image.jpeg"
         />
+
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon"></link>
       </Head>
 
       <div className="content">

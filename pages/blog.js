@@ -13,10 +13,13 @@ const blog = ({allPostsData}) => {
     <Layout>
       <Head>
         <SocialMetaTags 
-          title="Bruno Annunciato 🧑🏻‍💻"
+          title="Bruno Annunciato - Blog"
           description="Veja todas as postagens feitas por Bruno Annunciato"
           coverImage="/assets/img/cover-image.jpeg"
         />
+    
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon"></link>
       </Head>
       <div className="content">
         <section className={ styles.section }>

@@ -14,7 +14,7 @@ export default function Home({lastPosts}) {
   return (
     <Layout>
       <Head>
-        <title>Bruno Annunciato 🧑🏻‍💻</title>
+        <title>Bruno Annunciato</title>
         <SocialMetaTags 
           title="Bruno Annunciato"
           description="Desenvolvedor front-end desde 2016 e bacharel em Design Digital pela UAM em 2019."
