@@ -32,7 +32,7 @@ const Post = ({postData}) => {
         <div className={styles.content} dangerouslySetInnerHTML={{__html: postData.contentHtml}} /> 
 
         <Comments
-          title="Se acha que está postagem pode ser útil para mais alguém, você pode compartilhar este link em suas redes sociais. <br/>Caso queira me ajudar ainda mais, deixe um comentário abaixo com seu feedback. 😄"
+          title="Se acha que está postagem pode ser útil para mais alguém, você pode compartilhar este link em suas redes sociais."
         />
 
       </section>
